@@ -1,16 +1,15 @@
-library ieee;
-use ieee.std_logic_1164.all;
-
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 entity half_adder is
-    port (
-        a, b    : in  bit;
-        sum     : out bit;
-        carry   : out bit
-    );
+ Port (
+ A : in STD_LOGIC;
+ B : in STD_LOGIC;
+ SUM : out STD_LOGIC;
+ CARRY : out STD_LOGIC
+ );
 end half_adder;
-
-architecture data of half_adder is
+architecture Behavioral of half_adder is
 begin
-    sum   <= a xor b;
-    carry <= a and b;
-end data;
+ SUM <= A xor B;
+ CARRY <= A and B;
+end Behavioral;
