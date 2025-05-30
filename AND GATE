@@ -1,15 +1,14 @@
+-- and_gate.vhdl
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
-entity andGate is
-    Port (
-        A : in STD_LOGIC;  -- Input A
-        B : in STD_LOGIC;  -- Input B
-        Y : out STD_LOGIC  -- Output Y
-    );
-end andGate;
-
-architecture andLogic of andGate is
+entity and_gate is
+ Port (
+ A : in STD_LOGIC;
+ B : in STD_LOGIC;
+ Y : out STD_LOGIC
+ );
+end and_gate;
+architecture Behavioral of and_gate is
 begin
-    Y <= A and B;
-end andLogic;
+ Y <= A and B;
+end Behavioral; 
